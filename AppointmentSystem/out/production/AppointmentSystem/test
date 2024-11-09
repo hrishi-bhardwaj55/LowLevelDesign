@@ -1,0 +1,14 @@
+addDoctor name speciality 9-10,10-11,15-16
+addPatient name
+getAvailableTimeslots Cardiologist
+bookAppointment patientName doctorName 9-10
+
+
+
+addDoctor doc1 Cardiologist 9-10,10-11,15-16
+addDoctor doc2 Cardiologist 9-10,10-11
+addDoctor doc3 Physio 14-15,16-17
+getAvailableTimeslots Cardiologist
+addPatient patient1
+addPatient patient2
+bookAppointment patient1 doc1 10-11
