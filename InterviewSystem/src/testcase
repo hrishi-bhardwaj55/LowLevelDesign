@@ -1,0 +1,36 @@
+registerInterviewer(‘Interviewer1’, [‘MC’, ‘PSDS’], 7,  [ 1, 2, 3, 4])
+registerInterviewer(‘Interviewer2’, [MC’, ‘PSDS’’], 6,  [1, 2, 3, 4])
+registerInterviewee(‘Candidate1’, [1, 2, 3, 7, 8])
+registerInterviewee(‘Candidate2’, [1, 2, 3, 7, 8])
+registerInterviewee(‘Candidate3’, [8])
+
+Show Allocations
+
+‘Candidate1’ , MC, ‘Interviewer1’, 1
+‘Candidate1’, PSDS, ‘Interviewer2’, 2
+		‘Candidate2’, MC, ‘Interviewer1’, 2
+		‘Candidate2’, PSDS, ‘Interviewer2’, 1
+		Cannot Allocate PSDS for Candidate3
+		Cannot Allocate MC for Candidate3
+
+
+driver.addInterviewer("Interviewer1",7,"PSDS_MachineCoding","1,2,3,4");
+driver.addInterviewer("Interviewer2",6,"PSDS_MachineCoding","1,2,3,4");
+
+driver.addInterviewee("Candidate1","1,2,3,7,8");
+        driver.allocate();
+
+
+
+
+addInterviewer('In1', ['MC','PSDS'],7,[1,2,3,4])
+addInterviewer('In2', ['MC','PSDS'],7,[1,2,3,4])
+addInterviewee('C1',5,[1,2,3,7,8])
+addInterviewee('C2',10,[1,2,3,7,8])
+
+driver.addInterviewer("In1",7,"PSDS_MachineCoding","1,2,3,4");
+driver.addInterviewer("In2",7,"PSDS_MachineCoding","1,2,3,4");
+driver.addInterviewee("C1","1,2,3,7,8");
+driver.addInterviewee("C2","1,2,3,7,8");
+
+
